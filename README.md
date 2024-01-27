@@ -1,4 +1,4 @@
-## Running the Application
+## How to run this application?
 ### To run the application, follow the steps below:
 
 1. Open a terminal or command prompt.
