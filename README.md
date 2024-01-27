@@ -2,7 +2,7 @@
 This project is a real-time web calculator that provides two functionalities: Temperature Conversion and Currency Conversion.
 
 ## Features
-Temperature Converter: Convert temperatures between Celsius, Fahrenheit, and Kelvin.
+Temperature Converter: Convert temperatures between Celsius, Fahrenheit, and Kelvin.  
 Currency Converter: Convert currency values between various units, such as USD, IDR, JPY, and BTC.
 
 ## How to Run
@@ -17,7 +17,7 @@ Currency Converter: Convert currency values between various units, such as USD, 
 5. Access the web calculator in your browser at ```http://127.0.0.1:5500/```
 
 ## Usage
-Click on the "Temperature Calculator" button to perform temperature conversions.
+Click on the "Temperature Calculator" button to perform temperature conversions.  
 Click on the "Real Time Currency Converter" button to convert currency values.
 
 ## Acknowledgments
