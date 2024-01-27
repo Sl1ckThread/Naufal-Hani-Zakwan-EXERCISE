@@ -1,5 +1,5 @@
-##Running the Application
-###To run the application, follow the steps below:
+## Running the Application
+### To run the application, follow the steps below:
 
 1. Open a terminal or command prompt.
 2. Navigate to the project directory:
