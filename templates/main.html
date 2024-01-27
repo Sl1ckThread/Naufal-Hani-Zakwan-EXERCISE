@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <img src="your-logo.png" alt="Your Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="content-section">
+        <div class="button-bar">
+            <button class="temp-btn" onclick="showTemperatureCalculator()">Temperature Calculator</button>
+            <button class="currency-btn" onclick="showCurrencyConverter()">Real Time Currency Converter</button>
+        </div>
+
+        <div class="temperature-calculator">
+            <div class="calculator-boxes">
+                <div>
+                    <label for="inputValue">Input Value:</label>
+                    <input type="number" id="inputValue" placeholder="Enter value" required>
+                </div>
+                <div class="input-unit">
+                    <label for="inputUnit">Input Unit:</label>
+                    <select id="inputUnit" required>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="convert-to">
+                <label for="outputUnit">Convert to:</label>
+                <select id="outputUnit" required>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+        
+            <div class="button-bar">
+                <button class="calculate-btn" onclick="calculateTemperature()">Calculate</button>
+                <button class="clear-btn" onclick="clearTemperature()">Clear</button>
+            </div>
+
+            <div class="result">
+                <p id="result-label">Result:</p>
+                <p id="result-value"></p>
+            </div>
+        </div>
+
+        <div class="currency-converter">
+            <div class="converter-boxes">
+                <div>
+                    <label for="currencyInputValue">Input Value:</label>
+                    <input type="number" id="currencyInputValue" placeholder="Enter value" required>
+                </div>
+                <div class="input-unit">
+                    <label for="currencyInputUnit">Input Unit:</label>
+                    <select id="currencyInputUnit" required>
+                        <option value="USD">USD</option>
+                        <option value="IDR">IDR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="BTC">BTC</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="convert-to">
+                <label for="currencyOutputUnit">Convert to:</label>
+                <select id="currencyOutputUnit" required>
+                    <option value="USD">USD</option>
+                    <option value="IDR">IDR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="BTC">BTC</option>
+                </select>
+            </div>
+        
+            <div class="button-bar">
+                <button class="calculate-btn" onclick="calculateCurrency()">Convert</button>
+                <button class="clear-btn" onclick="clearCurrency()">Clear</button>
+            </div>
+        
+            <div class="result">
+                <p id="currency-result-label">Result:</p>
+                <p id="currency-result-value"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Website. All rights reserved.
+    </footer>
+</body>
+
+<script src="static/api-key.js"></script>
+<script src="static/script.js"></script>
+
+</html>
